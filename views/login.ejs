@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>node-sample &ndash; Login</title>
+        <style>
+            input.error {
+                border-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/login" method="post">
+            <input type="text" class="<%= error %>" name="username" placeholder="Nom d'utilisateur" required autofocus value="Admin">
+            <input type="password" class="<%= error %>" name="password" placeholder="Mot de passe" required value="pass">
+            <input type="submit" value="Se connecter">
+        </form>
+    </body>
+</html>

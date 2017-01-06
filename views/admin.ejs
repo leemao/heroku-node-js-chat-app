@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="/css/w3.css">
+    <head>
+        <meta charset="utf-8">
+        <title>node-sample &ndash; Admin</title>
+    </head>
+    <body>
+        <button id="logout"><%= username %> : se déconnecter</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom d'utilisateur</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="users"></tbody>
+        </table>
+        <form>
+            <input id="username" type="text" placeholder="Nom d'utilisateur" required>
+            <input id="password" type="password" placeholder="Mot de passe" required>
+            <input id="createuser" type="submit" value="Créer l'utilisateur">
+        </form>
+		
+		<table>
+            <thead>
+                <tr>
+                    <th>Nom du tchat</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="rooms"></tbody>
+        </table>
+		<form>
+            <input id="roomname" type="text" placeholder="Nom du tchat" required>
+            <input id="createroom" type="submit" value="Créer le tchat">
+        </form>
+		
+        <div id="results"></div>
+		
+        <script src="/socket.io/socket.io.js"></script>
+        <!--<script src="/js/client.js"></script>-->
+        <script src="/js/admin.js"></script>
+    </body>
+</html>

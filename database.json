@@ -1,0 +1,12 @@
+{
+    "users": {
+        "Admin": "$2a$08$miOuwRlzdcxYGYPGCps/tOewehGADfXXwR5HhjFBLZ2l.yeod8WAK",
+        "Tristan": "$2a$08$TvbcZ1ll/WxJICnaLSihBuu.wizWrfRQAhgplmZvQ8WDKMS59OOhe",
+        "Fabio": "$2a$08$iLWCPaW2iNeeD5ndi52aV.TmtmJbncbpEfORd8dEK9wyJH8BJ3XAa"
+    },
+    "rooms": {
+        "Accueil": "Accueil",
+        "Informatique": "Informatique",
+        "Musique": "Musique"
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>node-sample &ndash; Client</title>
+        <link rel="stylesheet" href="/css/w3.css">
+    </head>
+    <body>
+		<label type="test">Bienvenue sur le tchat </label>
+		<label type="text" id="un"><%= username %></label>
+		<button id="logout">Se déconnecter</button><br>
+		
+		<div style="float:left;width:150px;border-right:1px solid black;height:400px;padding:10px;overflow:scroll-y;">
+			<b>ROOMS</b>
+			<div id="rooms"></div>
+		</div>
+		
+		<!--
+		<table>
+            <thead>
+                <tr>
+                    <th>Noms rooms</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="rooms"></tbody>
+        </table>
+		<br>-->
+		<div id="results" style="height:240px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"></div><br>
+		<input type="text" id="champs1" style="width:500px;"/>
+		<button id="tchat">Envoyer</button><br>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/client.js"></script>
+    </body>
+</html>
